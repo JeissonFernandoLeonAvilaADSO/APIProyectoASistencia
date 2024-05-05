@@ -2,15 +2,14 @@ package com.proyectoasistencia.prasis.models;
 
 public class InstructorModel {
     private int Documento;
-    private int IDUsuarioInstructor;
-    private int IDTipoDocumento;
+    private String TipoDocumento;
     private String Nombres;
     private String  Apellidos;
-    private int IDGenero;
+    private String Genero;
     private int Telefono;
     private String Area;
-    private int IDRol;
-    private int IDSede;
+    private String Rol;
+    private String Sede;
 
     public int getDocumento() {
         return Documento;
@@ -20,20 +19,12 @@ public class InstructorModel {
         Documento = documento;
     }
 
-    public int getIDUsuarioInstructor() {
-        return IDUsuarioInstructor;
+    public String getTipoDocumento() {
+        return TipoDocumento;
     }
 
-    public void setIDUsuarioInstructor(int IDUsuarioInstructor) {
-        this.IDUsuarioInstructor = IDUsuarioInstructor;
-    }
-
-    public int getIDTipoDocumento() {
-        return IDTipoDocumento;
-    }
-
-    public void setIDTipoDocumento(int IDTipoDocumento) {
-        this.IDTipoDocumento = IDTipoDocumento;
+    public void setTipoDocumento(String tipoDocumento) {
+        TipoDocumento = tipoDocumento;
     }
 
     public String getNombres() {
@@ -52,12 +43,12 @@ public class InstructorModel {
         Apellidos = apellidos;
     }
 
-    public int getIDGenero() {
-        return IDGenero;
+    public String getGenero() {
+        return Genero;
     }
 
-    public void setIDGenero(int IDGenero) {
-        this.IDGenero = IDGenero;
+    public void setGenero(String genero) {
+        Genero = genero;
     }
 
     public int getTelefono() {
@@ -76,19 +67,19 @@ public class InstructorModel {
         Area = area;
     }
 
-    public int getIDRol() {
-        return IDRol;
+    public String getRol() {
+        return Rol;
     }
 
-    public void setIDRol(int IDRol) {
-        this.IDRol = IDRol;
+    public void setRol(String rol) {
+        Rol = rol;
     }
 
-    public int getIDSede() {
-        return IDSede;
+    public String getSede() {
+        return Sede;
     }
 
-    public void setIDSede(int IDSede) {
-        this.IDSede = IDSede;
+    public void setSede(String sede) {
+        Sede = sede;
     }
 }
